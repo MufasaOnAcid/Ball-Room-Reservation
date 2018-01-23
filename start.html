@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="start" style="font-family:lobster">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  </script>
+  <title>Start</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Rez Reservations</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="start.html">Booking</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid" style="padding:0;">
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default" style="margin:0;">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        <div class="panel-heading a">
+          <h4 class="panel-title">
+          Search
+        </h4>
+        </div>
+      </a>
+        <div id="collapse1" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <form>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default" style="margin:0;">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        <div class="panel-heading a">
+          <h4 class="panel-title">
+          Filtered Search
+        </h4>
+        </div>
+        </a>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <form class="form-inline">
+              <div class="form-group " style="padding: 0 5px;">
+                <label for="rank">Price Range</label><br>
+                <select class="form-control" name="">
+                  <option value="h-l">Highest to Lowest</option>
+                  <option value="l-w">Lowest to Highest</option>
+                </select>
+              </div>
+              <div class="form-group" style="padding: 0 5px;">
+                <label for="rank">Rank</label><br>
+                <select class="form-control" name="">
+                  <option value="5stars">5 Stars</option>
+                  <option value="4stars">4 Stars</option>
+                  <option value="3stars">3 Stars</option>
+                  <option value="2stars">2 Stars</option>
+                  <option value="1star">1 Star</option>
+                </select>
+              </div>
+              <div class="form-group" style="padding: 0 5px;">
+                <label for="a-z">List Order</label><br>
+                <select class="form-control" name="">
+                  <option value="atoz">A ~ Z</option>
+                  <option value="ztoa">Z ~ A</option>
+                </select>
+              </div>
+              <div class="form-group" style="padding: 0 5px;">
+                <label for="select">Capacity (P ~ Persons)</label><br>
+                <select class="form-control" placeholder="Capacity">
+                  <option value="2,500-P">2,500 P</option>
+                  <option value="1,000-P">1,000 P</option>
+                  <option value="750-P">750 P</option>
+                  <option value="600-P">600 P</option>
+                </select>
+              </div>
+              <div class="form-group a">
+                <label for=""></label><br>
+                <button type="button" class="btn btn-danger" name="button"> Filter <span class="glyphicon glyphicon-filter"></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="padding:0">
+    <nav class="navbar navbar-inverse b" style="margin:0">
+      <form class="form-inline">
+        <div class="form-group" style="padding:10px 20px;">
+          <label class="sort" for=""><b>Sort by:</span></b></label>
+          <a href="#">
+            <span class="glyphicon glyphicon-sort-by-alphabet a"></span>
+            </a> &nbsp;
+          <a href="#">
+            <span class="glyphicon glyphicon-sort-by-alphabet-alt a"></span>
+            </a>
+          <span class="glyphicon glyphicon-filter a"></span>
+        </div>
+      </form>
+    </nav>
+  </div>
+  </div>
+  <div class="container-fluid" style="margin: 2% 0 2% 0">
+    <div class="col-lg-6 a">
+      <div class="media a">
+        <div class="img">
+          <img src="logos/GHV.jpg" class="media-object a">
+        </div>
+        <div class="media-body a">
+          <h3 class="media-heading a">Grand Holiday Vila</h3>
+          <table class="table a">
+            <tr>
+              <td><span class="glyphicon glyphicon-road"></span>
+              </td>
+              <td>
+                <p>Nile Street</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="glyphicon glyphicon-phone-alt" alt="Contact"></span>
+              </td>
+              <td>
+                <p>+249913551079</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-star"></span>
+              </td>
+              <td>
+                <p>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star a"></span>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-scale"></span></td>
+              <td>
+                <p>Available</p>
+              </td>
+            </tr>
+            <tr>
+              <td> <span class="glyphicon glyphicon-usd"></span></td>
+              <td>
+                <p>10,000<b>SDG</b>/1hr</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="media-right a">
+          <button class="btn1 a" onclick="location.href='view.html'" type="button" name="button">View</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 a">
+      <div class="media a">
+        <div class="img">
+          <img src="logos/M.jpeg" class="media-object a">
+        </div>
+        <div class="media-body a a">
+          <h3 class="media-heading a">Marina Hall</h3>
+          <table class="table a">
+            <tr>
+              <td><span class="glyphicon glyphicon-road"></span>
+              </td>
+              <td>
+                <p>Nile Street</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="glyphicon glyphicon-phone-alt" alt="Contact"></span>
+              </td>
+              <td>
+                <p>+249913551079</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-star"></span>
+              </td>
+              <td>
+                <p>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star-empty a"></span>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-scale"></span></td>
+              <td>
+                <p>N/A</p>
+              </td>
+            </tr>
+            <tr>
+              <td> <span class="glyphicon glyphicon-usd"></span></td>
+              <td>
+                <p>3,500<b>SDG</b>/1hr</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="media-right a">
+          <button class="btn1 a" type="button" name="button">View</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 a">
+      <div class="media a">
+        <div class="img">
+          <img src="logos/P.jpg" class="media-object a">
+        </div>
+        <div class="media-body a">
+          <h3 class="media-heading a">Prestige</h3>
+          <table class="table a">
+            <tr>
+              <td><span class="glyphicon glyphicon-road"></span>
+              </td>
+              <td>
+                <p>Al-Marad Street</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="glyphicon glyphicon-phone-alt" alt="Contact"></span>
+              </td>
+              <td>
+                <p>+249913551079</p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-star"></span>
+              </td>
+              <td>
+                <p>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star a"></span>
+                  <span class="glyphicon glyphicon-star-empty a"></span>
+                  <span class="glyphicon glyphicon-star-empty a"></span>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="glyphicon glyphicon-scale"></span></td>
+              <td>
+                <p>N/A</p>
+              </td>
+            </tr>
+            <tr>
+              <td> <span class="glyphicon glyphicon-usd"></span></td>
+              <td>
+                <p>1,800<b>SDG</b>/1hr</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="media-right a">
+          <button class="btn1 a" type="button" name="button">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-inverse navbar-bottom" style="border-radius:0; margin-bottom:0; padding:0;">
+
+  </nav>
+</body>
+
+</html>

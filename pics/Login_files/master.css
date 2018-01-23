@@ -1,0 +1,238 @@
+html {
+  margin: 0;
+  font-family: lemonada;
+}
+body {
+  margin: 0;
+  background-color: #ebe7e7;
+  font-family: lemonada;
+}
+/*              Login UI                    */
+form.login-form {
+  font-family: lemonada;
+}
+.login {
+  /*border: 1px solid black;*/
+  border-radius: 14px;
+  box-shadow: 2px 4px 30px;
+  margin: 15% 35%;
+}
+.login-head {
+  background-color: #333;
+  text-align: right;
+  padding: 10px 25px;
+  margin-bottom: 2%;
+  border-radius: 12px 12px 0 0;
+}
+.login-head h3 {
+  margin: 0;
+  color: white;
+}
+input.log-txt {
+  width: 80%;
+  text-align: right;
+  font-size: 18px;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  padding: 10px 25px;
+  border-style: none;
+  border-bottom: 3px solid #333;
+}
+input.login-btn {
+  padding: 10px;
+  width: 20%;
+  margin-bottom: 2%;
+  font-size: 18px;
+  background-color: #fdfdfd;
+  border-radius: 0 0 0 0;
+  border-style: none;
+  color: #333;
+  transition: width, margin-bottom, background-color, border-radius, color, 0.8s;
+  transition-timing-function: ease-in-out;
+}
+.login-btn:hover {
+  width: 100%;
+  margin-bottom: 0;
+  color: white;
+  background-color: #333;
+  border-radius: 0 0 12px 12px;
+}
+/*              Horizontal Navbar           */
+.navheader {
+  background-color: #222;
+  margin: 0;
+  height: 50px;
+}
+.brand{
+  margin-left: -100px;
+  text-align: right;
+  border-right: 2px solid white;
+  background: #222;
+  color: white;
+  height: 100%;
+  width: 10%;
+  transition: background-color, border-radius, color, margin-left,1s;
+}
+
+.brand:hover {
+  background-color: white;
+  margin-left: 0;
+}
+.brand h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 7px;
+}
+.glyphicon.glyphicon-log-out {
+  color: white;
+}
+
+
+/*              Vertical Navbar           */
+
+.navbar {
+  /*border: 1px solid black;*/
+  background-color: #222;
+  list-style-type: none;
+  position: fixed;
+  float: right;
+  height: 100%;
+  width: 18%;
+  right: -210px;
+  margin: 0;
+  padding: 0;
+  transition: all, 1s;
+  overflow: visible;
+}
+
+.navbar:hover {
+  /*right: 0;*/
+}
+a{
+  text-decoration: none;
+}
+.navbar li {
+  width: 200px;
+  background-color: #333;
+  text-align: right;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  /*overflow: visible;*/
+  right: -210px;
+  transition: right, 1s;
+}
+.navbar li:hover {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  right: 0;
+}
+.navbar li:visited {
+  text-decoration: none;
+}
+li.active {
+  background-color: white;
+  color: #333;
+  /*border-right: 5px solid #333;*/
+  overflow: visible;
+  right: -210px;
+  transition: right, 1s;
+}
+
+li.active:hover {
+  background-color: white;
+  color: #333;
+  position: fixed;
+  right: 0;
+}
+
+li.active::after{
+  border-right: 17px solid white;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  content: "  ";
+  display: inline-block;
+  position: absolute;
+  right: 100%;
+  transition: all 1s;
+}
+li.active:hover::after {
+  border-left: 17px solid #ebe7e7;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  content: "  ";
+  display: inline-block;
+  position: absolute;
+  right: 86%;
+
+}
+/*         Home's Tab [القوائم]             */
+div.container {
+  /*border: 1px solid black;*/
+  margin-top: 1%;
+  margin-left: 1%;
+  height: auto;
+  width: 80%;
+}
+ .row {
+   margin: 0;
+   padding: 0;
+ }
+.tab {
+  /*border: 1px solid blue;*/
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: 2%;
+  height: 250px;
+  width: 30%;
+}
+.typo {
+  /*border: 1px solid black;*/
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.typo p{
+  position: absolute;
+  width: 50%;
+  text-align: right;
+  padding: 0 10px;
+  background-color: #444;
+  margin: 0;
+  color: white;
+  top: 218px;
+  right: -183px;
+  transition: right, 0.5s;
+}
+a , a:visited, a:hover{
+  text-decoration: none;
+  color: #222;
+}
+.typo h1 {
+  text-align: center;
+  color: #222;
+  padding: 5px 25px;
+  margin: 0;
+  font-size: 3.4em;
+}
+h1.small {
+  font-size: 2.5em;
+}
+p::after {
+  border-right: 25px solid #444;
+  border-top: 17px solid transparent;
+  border-bottom: 15px solid transparent;
+  content: "      ";
+  display: inline-block;
+  position: absolute;
+  right: 100%;
+}
+.tab:hover p {
+  right: 0;
+}
